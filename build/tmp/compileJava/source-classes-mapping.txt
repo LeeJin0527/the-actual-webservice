@@ -1,3 +1,5 @@
+com/zinzun/book/springboot/web/dto/HelloResponseDto.java
+ com.zinzun.book.springboot.web.dto.HelloResponseDto
 com/zinzun/book/springboot/Application.java
  com.zinzun.book.springboot.Application
 com/zinzun/book/springboot/web/HelloController.java
