@@ -1,0 +1,44 @@
+//ext: build.gradle 에서 사용하는 전역변수를 설정 springBootVersion의 전역변수 생성
+buildscript{
+    ext{
+        springBootVersion = '2.1.7.RELEASE'
+    }
+    repositories{
+        mavenCentral()
+        jcenter()
+    }
+    dependencies{
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+
+plugins {
+    id 'java'
+}
+//플러그인 의존성 적용
+apply plugin :'java'
+apply plugin :'eclipse'
+apply plugin :'org.springframework.boot'
+apply plugin :'io.spring.dependency-management'
+
+group 'com.zinzun.book'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter() //라이브러리 업로드를 간단하게 만들기 위해서 사용
+}
+//프로젝트 개발에 필요한 의존성 선언
+//인텔리제이는 메이븐 저장소의 데이터를 인덱싱해서 관리하기 때문에 의존성 자동완성 가능
+//특정 버전 명시하면 안됨
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    compile('org.springframework.boot:spring-boot-starter-web')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+test {
+    useJUnitPlatform()
+}
