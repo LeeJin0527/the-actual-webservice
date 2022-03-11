@@ -1,2 +1,4 @@
 com/zinzun/book/springboot/web/HelloControllerTest.java
  com.zinzun.book.springboot.web.HelloControllerTest
+com/zinzun/book/springboot/web/dto/HelloResponseDtoTest.java
+ com.zinzun.book.springboot.web.dto.HelloResponseDtoTest
