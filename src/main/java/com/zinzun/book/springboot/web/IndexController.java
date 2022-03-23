@@ -1,6 +1,8 @@
 package com.zinzun.book.springboot.web;
 
 import com.zinzun.book.springboot.service.PostsService;
+import com.zinzun.book.springboot.service.config.auth.LoginUser;
+import com.zinzun.book.springboot.service.config.auth.dto.SessionUser;
 import com.zinzun.book.springboot.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -9,10 +11,14 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import javax.lang.model.element.ModuleElement;
+import javax.servlet.http.HttpSession;
+
 @RequiredArgsConstructor
 @Controller
 public class IndexController {
     private final PostsService postsService;
+    private final HttpSession httpSession;
 //    @GetMapping("/")
 //    public String index(){
 //        return "index";
@@ -32,9 +38,19 @@ public class IndexController {
 
 
 
+//    @GetMapping("/")
+//    public String index(Model model){
+//        model.addAttribute("posts", postsService.findAllDesc());
+//        return "index";
+//    }
+//
     @GetMapping("/")
-    public String index(Model model){
+    public String index(Model model, @LoginUser SessionUser user){
         model.addAttribute("posts", postsService.findAllDesc());
+
+        if(user != null){
+            model.addAttribute("userName", user.getName());
+        }
         return "index";
     }
 }
