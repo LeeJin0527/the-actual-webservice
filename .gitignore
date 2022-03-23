@@ -5,3 +5,4 @@
 # IntelliJ project files
 .idea
 .gradle
+application-oauth.properties
