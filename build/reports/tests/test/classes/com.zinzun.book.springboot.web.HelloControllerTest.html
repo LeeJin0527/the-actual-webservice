@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.639s</div>
+<div class="counter">0.258s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">helloDto가_리턴된다</td>
-<td class="success">0.097s</td>
+<td class="success">0.104s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">hello가_리턴된다</td>
-<td class="success">0.542s</td>
+<td class="success">0.154s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,16 +92,7 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>00:47:08.622 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.zinzun.book.springboot.web.HelloControllerTest]
-00:47:08.623 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.zinzun.book.springboot.web.HelloControllerTest]
-00:47:08.624 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.zinzun.book.springboot.web.HelloControllerTest]
-00:47:08.624 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.zinzun.book.springboot.web.HelloControllerTest]
-00:47:08.630 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@bf71562 testClass = HelloControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5a6170e1 testClass = HelloControllerTest, locations = '{}', classes = '{class com.zinzun.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@3d25259c, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@52eacdab, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@a6f67768, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@660a6c86, [ImportsContextCustomizer@5a559dae key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4a217276, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@411189fe, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
-00:47:08.632 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.zinzun.book.springboot.web.HelloControllerTest]
-00:47:08.632 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.zinzun.book.springboot.web.HelloControllerTest]
-00:47:08.640 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@bf71562 testClass = HelloControllerTest, testInstance = com.zinzun.book.springboot.web.HelloControllerTest@4dca2748, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5a6170e1 testClass = HelloControllerTest, locations = '{}', classes = '{class com.zinzun.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@3d25259c, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@52eacdab, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@a6f67768, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@660a6c86, [ImportsContextCustomizer@5a559dae key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4a217276, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@411189fe, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
-00:47:08.672 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true, server.port=-1}
-
+<pre>
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
 ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
@@ -110,19 +101,19 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.7.RELEASE)
 
-2022-03-24 00:47:09.074  INFO 11198 --- [    Test worker] c.z.b.s.web.HelloControllerTest          : Starting HelloControllerTest on ijin-ui-MacBookPro.local with PID 11198 (started by ijin in /Users/ijin/Documents/GitHub/the-actual-webservice)
-2022-03-24 00:47:09.078  INFO 11198 --- [    Test worker] c.z.b.s.web.HelloControllerTest          : No active profile set, falling back to default profiles: default
-2022-03-24 00:47:10.693  INFO 11198 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-24 00:47:10.817  INFO 11198 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-03-24 00:47:11.145  INFO 11198 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+2022-03-24 21:18:02.985  INFO 79680 --- [    Test worker] c.z.b.s.web.HelloControllerTest          : Starting HelloControllerTest on ijin-ui-MacBookPro.local with PID 79680 (started by ijin in /Users/ijin/Documents/GitHub/the-actual-webservice)
+2022-03-24 21:18:02.987  INFO 79680 --- [    Test worker] c.z.b.s.web.HelloControllerTest          : No active profile set, falling back to default profiles: default
+2022-03-24 21:18:03.476  INFO 79680 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-24 21:18:03.523  INFO 79680 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-24 21:18:03.823  INFO 79680 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: c7472b85-6c0b-4395-933d-e641d61584e2
+Using generated security password: 701d20d3-8b29-48a7-84df-2c8480eb9409
 
-2022-03-24 00:47:11.330  INFO 11198 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3154f74c, org.springframework.security.web.context.SecurityContextPersistenceFilter@7b0191f4, org.springframework.security.web.header.HeaderWriterFilter@7a7e2e65, org.springframework.security.web.csrf.CsrfFilter@6fb3cd49, org.springframework.security.web.authentication.logout.LogoutFilter@61b0dbd3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5521ef44, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@954ddd3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@13981d68, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5acf2910, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@624f74ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ba8df84, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33567797, org.springframework.security.web.session.SessionManagementFilter@48705d27, org.springframework.security.web.access.ExceptionTranslationFilter@540cb955, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@440c7612]
-2022-03-24 00:47:11.375  INFO 11198 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2022-03-24 00:47:11.375  INFO 11198 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2022-03-24 00:47:11.387  INFO 11198 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 11 ms
-2022-03-24 00:47:11.432  INFO 11198 --- [    Test worker] c.z.b.s.web.HelloControllerTest          : Started HelloControllerTest in 2.746 seconds (JVM running for 4.207)
+2022-03-24 21:18:03.946  INFO 79680 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@377db2c6, org.springframework.security.web.context.SecurityContextPersistenceFilter@7bc7d51e, org.springframework.security.web.header.HeaderWriterFilter@2a12edbc, org.springframework.security.web.csrf.CsrfFilter@8fa088f, org.springframework.security.web.authentication.logout.LogoutFilter@2acd850a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@35778a1d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3d08362a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@29cffbec, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5d193e21, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@535d390c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e1f41d6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3db320c2, org.springframework.security.web.session.SessionManagementFilter@72f43601, org.springframework.security.web.access.ExceptionTranslationFilter@54ff99ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c07a051]
+2022-03-24 21:18:03.988  INFO 79680 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-03-24 21:18:03.988  INFO 79680 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-03-24 21:18:04.003  INFO 79680 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 14 ms
+2022-03-24 21:18:04.042  INFO 79680 --- [    Test worker] c.z.b.s.web.HelloControllerTest          : Started HelloControllerTest in 1.101 seconds (JVM running for 11.697)
 </pre>
 </span>
 </div>
@@ -134,7 +125,7 @@ Using generated security password: c7472b85-6c0b-4395-933d-e641d61584e2
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.7</a> at 2022. 3. 24. 오전 12:47:18</p>
+<a href="http://www.gradle.org">Gradle 6.7</a> at 2022. 3. 24. 오후 9:18:07</p>
 </div>
 </div>
 </body>

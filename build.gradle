@@ -36,31 +36,19 @@ repositories {
 dependencies {
 //    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
 //    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    //추가
-    testImplementation("org.junit.vintage:junit-vintage-engine") {
-        exclude group: "org.hamcrest", module: "hamcrest-core"
-    }
-    implementation 'org.projectlombok:lombok'
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
-//    annotationProcessor 'org.projectlombok:lombok'
-//    testImplementation 'org.junit.jupiter:junit-jupiter-api'
-//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-    compile('org.springframework.boot:spring-boot-starter-web')
-    testImplementation('org.springframework.boot:spring-boot-starter-test')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.projectlombok:lombok')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
-    compile('com.h2database:h2')
     compile('org.springframework.boot:spring-boot-starter-mustache')
-//    implementation 'org.springframework.boot:spring-boot-starter.oauth2-client'
-    implementation 'org.springframework.boot:spring-boot-starter-security'
-    implementation 'org.springframework.security:spring-security-test'
-    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+    compile('com.h2database:h2')
+
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
     compile('org.springframework.session:spring-session-jdbc')
 
+    compile("org.mariadb.jdbc:mariadb-java-client")
 
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile("org.springframework.security:spring-security-test")
 }
 
 test {
