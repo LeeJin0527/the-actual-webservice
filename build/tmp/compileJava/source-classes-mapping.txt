@@ -43,11 +43,11 @@ com/zinzun/book/springboot/service/config/WebConfig.java
  com.zinzun.book.springboot.service.config.WebConfig
 com/zinzun/book/springboot/web/dto/PostsListResponseDto.java
  com.zinzun.book.springboot.web.dto.PostsListResponseDto
-com/zinzun/book/springboot/web/IndexController.java
- com.zinzun.book.springboot.web.IndexController
+com/zinzun/book/springboot/service/config/JpaConfig.java
+ com.zinzun.book.springboot.service.config.JpaConfig
 com/zinzun/book/springboot/web/domain/posts/PostsRepository.java
  com.zinzun.book.springboot.web.domain.posts.PostsRepository
 com/zinzun/book/springboot/Application.java
  com.zinzun.book.springboot.Application
-com/zinzun/book/springboot/service/config/JpaConfig.java
- com.zinzun.book.springboot.service.config.JpaConfig
+com/zinzun/book/springboot/web/IndexController.java
+ com.zinzun.book.springboot.web.IndexController
