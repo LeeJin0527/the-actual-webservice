@@ -8,8 +8,8 @@ com/zinzun/book/springboot/web/domain/posts/Posts.java
  com.zinzun.book.springboot.web.domain.posts.Posts$PostsBuilder
 com/zinzun/book/springboot/service/config/auth/LoginUserArgumentResolver.java
  com.zinzun.book.springboot.service.config.auth.LoginUserArgumentResolver
-com/zinzun/book/springboot/web/domain/BaseTimeEntity.java
- com.zinzun.book.springboot.web.domain.BaseTimeEntity
+com/zinzun/book/springboot/Application.java
+ com.zinzun.book.springboot.Application
 com/zinzun/book/springboot/web/domain/user/User.java
  com.zinzun.book.springboot.web.domain.user.User
  com.zinzun.book.springboot.web.domain.user.User$UserBuilder
@@ -30,6 +30,8 @@ com/zinzun/book/springboot/web/dto/HelloResponseDto.java
 com/zinzun/book/springboot/service/config/auth/dto/OAuthAttributes.java
  com.zinzun.book.springboot.service.config.auth.dto.OAuthAttributes
  com.zinzun.book.springboot.service.config.auth.dto.OAuthAttributes$OAuthAttributesBuilder
+com/zinzun/book/springboot/service/config/JpaConfig.java
+ com.zinzun.book.springboot.service.config.JpaConfig
 com/zinzun/book/springboot/web/dto/PostsUpdateRequestDto.java
  com.zinzun.book.springboot.web.dto.PostsUpdateRequestDto
  com.zinzun.book.springboot.web.dto.PostsUpdateRequestDto$PostsUpdateRequestDtoBuilder
@@ -43,11 +45,9 @@ com/zinzun/book/springboot/service/config/WebConfig.java
  com.zinzun.book.springboot.service.config.WebConfig
 com/zinzun/book/springboot/web/dto/PostsListResponseDto.java
  com.zinzun.book.springboot.web.dto.PostsListResponseDto
-com/zinzun/book/springboot/service/config/JpaConfig.java
- com.zinzun.book.springboot.service.config.JpaConfig
-com/zinzun/book/springboot/web/domain/posts/PostsRepository.java
- com.zinzun.book.springboot.web.domain.posts.PostsRepository
-com/zinzun/book/springboot/Application.java
- com.zinzun.book.springboot.Application
 com/zinzun/book/springboot/web/IndexController.java
  com.zinzun.book.springboot.web.IndexController
+com/zinzun/book/springboot/web/domain/posts/PostsRepository.java
+ com.zinzun.book.springboot.web.domain.posts.PostsRepository
+com/zinzun/book/springboot/web/domain/BaseTimeEntity.java
+ com.zinzun.book.springboot.web.domain.BaseTimeEntity

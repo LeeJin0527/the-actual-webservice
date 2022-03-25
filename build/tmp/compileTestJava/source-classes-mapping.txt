@@ -1,10 +1,10 @@
-com/zinzun/book/springboot/web/dto/HelloResponseDtoTest.java
- com.zinzun.book.springboot.web.dto.HelloResponseDtoTest
+com/zinzun/book/springboot/web/HelloControllerTest.java
+ com.zinzun.book.springboot.web.HelloControllerTest
 com/zinzun/book/springboot/web/domain/posts/PostsRepositoryTest.java
  com.zinzun.book.springboot.web.domain.posts.PostsRepositoryTest
 com/zinzun/book/springboot/web/IndexControllerTest.java
  com.zinzun.book.springboot.web.IndexControllerTest
 com/zinzun/book/springboot/web/PostsApiControllerTest.java
  com.zinzun.book.springboot.web.PostsApiControllerTest
-com/zinzun/book/springboot/web/HelloControllerTest.java
- com.zinzun.book.springboot.web.HelloControllerTest
+com/zinzun/book/springboot/web/dto/HelloResponseDtoTest.java
+ com.zinzun.book.springboot.web.dto.HelloResponseDtoTest
