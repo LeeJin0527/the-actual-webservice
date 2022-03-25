@@ -26,8 +26,6 @@
   - 조회
   - 수정
 
-## 컴포넌트 다이어그램 
-<img width="600" alt="스크린샷 2022-02-15 오후 6 12 50" src="https://user-images.githubusercontent.com/64263694/154030098-369fff2d-757e-4433-822b-9392d4a12868.png">
 
 
 ## DB ERD 
