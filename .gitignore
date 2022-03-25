@@ -3,4 +3,6 @@
 .idea
 .gradle
 application-oauth.properties
+.out
+build
 
