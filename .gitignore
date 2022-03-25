@@ -4,5 +4,5 @@
 .gradle
 application-oauth.properties
 .out
-build
+.build
 
