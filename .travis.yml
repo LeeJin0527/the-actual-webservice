@@ -13,7 +13,7 @@ script: "./gradlew clean build"
 before_deploy:
     - zip -r the-actual-webservice *
     - mkdir -p deploy
-    - mv the-actual-webservice.zip deploy/the-actual-webservice.aip
+    - mv the-actual-webservice.zip deploy/the-actual-webservice.zip
 deploy:
     - provider: s3
       access_key_id: $AWS_ACCESS_KEY
