@@ -25,6 +25,19 @@ deploy:
       local_dir: deploy
       wait-until-deployed: true
 
+
+      - provider: codedeploy
+        access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+        secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
+        bucket: actual-springboot-build
+        key: the-actual-webservice.zip
+
+        bundle_type: zip
+        application: the-actual-webservice
+        deployment_group: the-actual-webservice-group
+        region: ap-northeast-2
+        wait-until-deployed: true
+
 notifications:
     email:
         recipients:
