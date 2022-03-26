@@ -26,7 +26,7 @@
   - 조회
   - 수정
 ## 컴포넌트 다이어그램 
-<img width="589" alt="스크린샷 2022-03-26 오전 1 49 58" src="https://user-images.githubusercontent.com/64263694/160165472-4f6bdedb-ed62-49e7-84f1-80e66b37213f.png">
+![](https://images.velog.io/images/jinii/post/93c042b6-dd95-4754-bcc8-6407fd229d4e/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-03-26%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%207.25.13.png)
 
 ## DB ERD 
 
