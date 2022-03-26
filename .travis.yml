@@ -9,6 +9,23 @@ cache:
         - '$HOME/.m2/repository'
         - '$HOME/.gradle'
 script: "./gradlew clean build"
+
+before_deploy:
+    - zip -r the-actual-webservice *
+    - mkdir -p deploy
+    - mv the-actual-webservice.zip deploy/the-actual-webservice.aip
+deploy:
+    - provider: s3
+      access_key_id: $AWS_ACCESS_KEY
+      secret_access_key: $AWS_SECERT_KEY
+
+      bucket: actual-springboot-build
+      region: ap-northeast-2
+      skip_cleanup: true
+      acl : private
+      local_dir: deploy
+      wait-until-deployed :true
+
 notifications:
     email:
         recipients:
