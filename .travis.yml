@@ -1,13 +1,14 @@
 language: java
 jdk:
-    -openjdk8
+  -openjdk8
 branches:
-    only:
-        - master
+  only:
+    - master
+
 cache:
-    directories:
-        - '$HOME/.m2/repository'
-        - '$HOME/.gradle'
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.gradle'
 script: "./gradlew clean build"
 
 before_deploy:
@@ -19,28 +20,28 @@ before_deploy:
   - cd ../ && mkdir -p deploy # 상위 디렉토리로 이동후 deploy 디렉토리 생성
   - mv before-deploy/before-deploy.zip deploy/the-actual-webservice.zip # deploy로 zip파일 이동
 deploy:
-    - provider: s3
-      access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
-      secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
-      bucket: actual-springboot-build
-      region: ap-northeast-2
-      skip_cleanup: true
-      acl : private
-      local_dir: deploy
-      wait-until-deployed: true
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+    secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
+    bucket: actual-springboot-build
+    region: ap-northeast-2
+    skip_cleanup: true
+    acl : private
+    local_dir: deploy
+    wait-until-deployed: true
 
 
-    - provider: codedeploy
-      access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
-      secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
-      bucket: actual-springboot-build
-      key: the-actual-webservice.zip
+  - provider: codedeploy
+    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+    secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
+    bucket: actual-springboot-build
+    key: the-actual-webservice.zip
 
-      bundle_type: zip
-      application: the-actual-webservice
-      deployment_group: the-actual-webservice-group
-      region: ap-northeast-2
-      wait-until-deployed: true
+    bundle_type: zip
+    application: the-actual-webservice
+    deployment_group: the-actual-webservice-group
+    region: ap-northeast-2
+    wait-until-deployed: true
 
 notifications:
     email:
