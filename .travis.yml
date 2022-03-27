@@ -44,7 +44,6 @@ deploy:
     wait-until-deployed: true
 
 notifications:
-    email:
-        recipients:
-            - ijin17463@gmail.com
-            
+  email:
+    recipients:
+      - ijin17463@gmail.com
